@@ -84,6 +84,7 @@ class LinkedList {
     }
 
     void remove(int position) {
+        
         if (this.head == null)
             return;
         if (position == 0) {
