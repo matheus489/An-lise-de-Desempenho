@@ -39,8 +39,9 @@ class LinkedList:
             node = node.next
         print()
 
-# Função para executar as ações conforme o arquivo
+# Função para executar as ações conforme o 
 def execute_actions(file_name):
+    
     with open(file_name, 'r') as file:
         data = file.readline().strip().split()
         linked_list = LinkedList()
@@ -72,6 +73,7 @@ def execute_actions(file_name):
                 linked_list.remove(Posição)
             elif Ação[0] == 'P':
                 linked_list.print_list()
+                
 
 # Executando as ações conforme o arquivo arq.txt
 execute_actions("D:/Faculdade/Analise/arq.txt")
