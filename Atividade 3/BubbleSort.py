@@ -24,7 +24,7 @@ def write_numbers(file_name, numbers):
 
 def main():
     # Lê os números do arquivo de entrada
-    numbers = read_numbers('D:/Faculdade/Analise/An-lise-de-Desempenho/Atividade 3/arq (1).txt')
+    numbers = read_numbers('D:/Faculdade/Analise/An-lise-de-Desempenho/Atividade 3/arq (1) BubbleSort.txt')
 
     # Inicia a medição de memória
     tracemalloc.start()
@@ -41,7 +41,7 @@ def main():
     tracemalloc.stop()
     
     # Escreve os números ordenados no arquivo de saída
-    write_numbers('arq-saida.txt', sorted_numbers)
+    write_numbers('arq-saidaBubbleSort.txt', sorted_numbers)
 
     # Imprime o tempo de execução e a memória utilizada
     print(f"Tempo de execução: {(end_time - start_time) * 1000:.2f} ms")

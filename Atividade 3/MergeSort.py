@@ -65,7 +65,7 @@ def main():
     tracemalloc.stop()
     
     # Escreve os números ordenados no arquivo de saída
-    write_numbers('arq-saida.txt', sorted_numbers)
+    write_numbers('arq-saidaMergeSort.txt', sorted_numbers)
 
     # Imprime o tempo de execução e a memória utilizada
     print(f"Tempo de execução: {(end_time - start_time) * 1000:.2f} ms")
