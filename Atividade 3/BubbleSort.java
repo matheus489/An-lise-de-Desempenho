@@ -16,6 +16,9 @@ public class BubbleSort {
         // Ordena os números
         List<Integer> sortedNumbers = bubbleSort(numbers);
 
+
+
+        
         // Termina a medição de tempo e memória
         long endTime = System.currentTimeMillis();
         long endMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
